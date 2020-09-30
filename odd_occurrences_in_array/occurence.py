@@ -8,4 +8,4 @@ def occur(arr):
         elif A[i] != A[i+]:
             return A[i]
     
-print(occur([1,1,2,2,3]))
+
