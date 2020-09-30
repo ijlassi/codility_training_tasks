@@ -1,8 +1,8 @@
 
 def solution(A):
     list = []
-     if len(A) == 0:
-        return 1
+     if A == []:
+        return 2
     elif len(A) == 1:
       return 2
     elif len(A)== 2:
