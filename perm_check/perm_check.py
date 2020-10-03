@@ -1,11 +1,13 @@
-def perm(arr):
+def solution(A):
+    count = 0
     list = []
-    for i in range(1,len(arr)+1):
+    for i in range(1,len(A)+1):
         list.append(i)
-    arr.sort()
-    for i in range(1,len(arr)) :
-        if  arr[i]== list[i]:
-            return 1
-        else:
-            return 0
+    A= sorted(A)
+    for i in range(len(list)) :
+        if  A[i]== list[i]:
+            count = count +1
+    if count == len(A):
+        return 1
 
+    return 0
