@@ -9,8 +9,3 @@ def solution (A):
             min += 1
     return min
     
-
-        
-
-print(solution([1, 3, 6, 4, 1, 2]))
-print(solution([1, 2, 3]))
