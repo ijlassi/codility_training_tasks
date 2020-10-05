@@ -1,5 +1,5 @@
 def solution(A): 
-    if (len (A))==1 :
+    if len (A)==1 :
         return A[0]
     A = sorted(A)
     for i in range (0,len(A),2):
