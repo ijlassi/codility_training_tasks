@@ -1,15 +1,13 @@
 def solution(N, A):
     list = [0]*N
-    lista = []
-    for i in range(len(A)):
-        if A[i] in range(0,N+1):
-           list[A[i]-1]+= 1 
-        elif A[i]== N+1:
-            res = max(list)
-            for i,v in enumerate(list):
-              list[i]= res
-               
-            
+    min_l = 0
+    max_l = 0
+    for i in A:
+        if i in range(0,N+1):
+           list[i-1] = max(list[i-1],min_l) +1 
+           max_l = max(max_l,list[i-1])
+        else :
+            min_l = max_l
+    for i in range(N):
+         list[i]= max(list[i],min_l)
     return list
-print(solution(5,[3, 4, 4, 6, 1, 4, 4]))
-print(solution(1, [1]))
