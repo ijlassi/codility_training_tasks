@@ -1,4 +1,4 @@
-def occur(arr): 
+def solution(A): 
     if (len (A))==1 :
         return A[0]
     A = sorted(A)
