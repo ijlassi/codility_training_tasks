@@ -8,6 +8,4 @@ def solution(A):
             count_1 += count_0
         if  count_1 > 1000000000:
            return -1
-    print(count_1) 
-
-    print(solution([0,1,0,1,1]))
+    return count_1
