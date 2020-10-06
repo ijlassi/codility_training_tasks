@@ -1,8 +1,7 @@
 def solution(A):
     A= sorted(A)
-    list = []
+    list = set()
     for  item in A :
-       if item not in list :
-            list.append(item)
-    return list
+            list.add(item)
+    return len(list)
     
