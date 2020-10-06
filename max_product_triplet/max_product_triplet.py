@@ -1,5 +1,5 @@
-import sys
 def solution(A):
+   list = []
     pr = 0
     ans =0
     for P in range(0,len(A)):
@@ -8,6 +8,8 @@ def solution(A):
                 for R in range(len(A)):
                     if Q < R :
                         pr = A[P]*A[Q]*A[R]
-                        if ans < pr:
-                            ans = pr
-    return pr
+                        list.append(pr)
+                        
+    return max(list)
+
+    
