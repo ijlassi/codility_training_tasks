@@ -14,5 +14,3 @@ def solution(A):
     return count 
         
                 
-
-print(solution([1,5,2,1,4,0]))
