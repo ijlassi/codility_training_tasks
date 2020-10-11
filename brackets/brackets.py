@@ -1,4 +1,4 @@
-def nest(S):
+def solution(S):
     opening = ["(", "{", "["]
     closing = [")", "}", "]"]
     list_ = []
