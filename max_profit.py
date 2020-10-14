@@ -9,3 +9,5 @@ def solution(A):
         maxi = max(maxi, max_profit-A[i])
         max_profit = max(A[i], max_profit)
     return maxi
+    
+print(solution([23171,21011,21123,21366,21013,21367]))
