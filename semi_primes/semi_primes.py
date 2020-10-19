@@ -12,14 +12,11 @@ def solution(N, P, Q):
                 semi_primes[i*j]+=2
     flags[0] = semi_primes[0]
     for idx, semi in enumerate(semi_primes[1:]):
-        print(idx,semi)
         if semi==1:
             flags[idx+1] = flags[idx] + 1
             print(flags)
         else:
             flags[idx+1] = flags[idx]
-            print(flags)
     for p, q in zip(P, Q):
         results.append(flags[q] - flags[p-1])
     return results
-print(solution(26,[1,4,16],[26,10,20]))
