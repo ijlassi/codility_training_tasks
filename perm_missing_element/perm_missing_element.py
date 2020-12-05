@@ -1,4 +1,3 @@
-
 def solution(A):
     count = 1
     A = sorted(A)

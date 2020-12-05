@@ -2,7 +2,6 @@ def gcd(a,b):
     if b == 0:
        return a 
     return gcd(b,a % b)
-    
 def solution(A,B):
     count = 0 
     for i in range(0,len(A)):

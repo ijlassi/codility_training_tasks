@@ -1,7 +1,7 @@
 def solution(A):
-    A= sorted(A)
-    list = set()
+    A = sorted(A)
+    list1 = set()
     for  item in A :
-            list.add(item)
-    return len(list)
+            list1.add(item)
+    return len(list1)
     

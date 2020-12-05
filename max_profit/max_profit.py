@@ -5,7 +5,6 @@ def solution(A):
         return 0
     max_profit = A[len(A)-1]
     for i in range(len(A)-2, -1, -1):
-        print(A[i])
         maxi = max(maxi, max_profit-A[i])
         max_profit = max(A[i], max_profit)
     return maxi
