@@ -4,7 +4,7 @@ def solution (A):
     for i,v in enumerate(A,1) :
         lista.add(v)
     s = sorted(list(lista))
-    for i in s:
+    for i in s :
         if i == min:
             min += 1
     return min
