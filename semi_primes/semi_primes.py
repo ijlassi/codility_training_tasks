@@ -1,7 +1,7 @@
 def solution(N, P, Q):
     results = []
     semi_primes = [0] * (N+1)
-    flags = [0] * (N+1)
+    flags = [0]*(N+1)
     for i in range(2, N+1):
         for j in range(i, int(N/i)+1):
             num1 = semi_primes[i]
