@@ -1,8 +1,7 @@
 def solution(H):
-    n = len(H)
     count = 1
     stack = [H[0]]
-    for i in range(1, n):
+    for i in range(1, len(H)):
         if H[i] == stack[-1]:
             continue
         elif H[i] < stack[-1]:
