@@ -10,7 +10,7 @@ def solution(A):
        if res > count :
            count = res
            number = A.index(i)
-           if count > len(A)//2 :
+           if count > (len(A) // 2):
                return number
    return -1
 
