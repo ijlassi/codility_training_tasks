@@ -2,7 +2,6 @@ def solution(S):
     opening = ["("]
     closing = [")"]
     list1 = []
-
     if len(S) == 0:
         return 1
     for s in S:
