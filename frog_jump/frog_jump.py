@@ -1,7 +1,7 @@
-def solution(X,Y,D): 
-   distance = Y -X 
-   if distance % D == 0:
+def solution(X,Y,D):
+    distance = Y -X 
+    if distance % D == 0:
        return distance // D
-   else :
+    else:
        return distance // D +1 
 
