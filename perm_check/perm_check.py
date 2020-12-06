@@ -1,7 +1,7 @@
 def solution(A):
     count = 0
     list1 = []
-    for i in range(1,len(A)+1):
+    for i in range(1, len(A) + 1):
         list1.append(i)
     A= sorted(A)
     for i in range(len(list1)) :
