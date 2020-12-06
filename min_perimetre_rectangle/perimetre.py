@@ -5,7 +5,7 @@ def solution(N):
         if N % i == 0:
            list_factors.append(i)
            list_factors.append(N//i)
-           peri = (i + N//i)*2
-           temp_list.append(peri)
+           perimetre = (i + N//i)*2
+           temp_list.append(perimetre)
     return min(temp_list)
 
