@@ -1,4 +1,9 @@
 from functools import reduce
 def solution(N):
-    return len(set(reduce(list.__add__, 
-                ([i, N//i] for i in range(1, int(N**0.5) + 1) if N % i == 0))))
+    list1 = set()
+    for i in range(1, int(N**0.5) + 1):
+        if N % i == 0:
+            list1.add(i)
+            list1.add(N//i)
+    return len(list1)
+            
