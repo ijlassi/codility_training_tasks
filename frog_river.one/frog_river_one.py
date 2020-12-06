@@ -1,9 +1,9 @@
 def solution(X,A):
-    lista = set()
+    list1 = set()
     for i,v in enumerate(A):
         if v <= X:
-            lista.add(v)
-            if len(lista)==X:
+            list1.add(v)
+            if len(list1)==X:
                 return i
     return -1
 
