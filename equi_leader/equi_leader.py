@@ -3,10 +3,10 @@ def solution(A):
     count1 = 0
     number = 0
     answer = 0
-    for i in A:
+    for item in A:
         if count == 0 :
-            number = i
-        if number == i:
+            number = item
+        if number == item:
             count = count + 1
         else : 
             count = count - 1 
