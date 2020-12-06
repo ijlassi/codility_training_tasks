@@ -15,5 +15,4 @@ def solution(A,B):
                 upst.pop()
             elif upst[-1] > downst[-1]:
                 downst.pop()
-
     return len(downst) + len(upst) + count
