@@ -6,10 +6,10 @@ def solution(N, P, Q):
         for j in range(i, int(N/i)+1):
             num1 = semi_primes[i]
             num2 = semi_primes[j]
-            if num1==0 and num2==0:
-                semi_primes[i*j]+=1
-            elif num1==0 or num2==0:
-                semi_primes[i*j]+=2
+            if num1 == 0 and num2 == 0:
+                semi_primes[i*j] += 1
+            elif num1 == 0 or num2 == 0:
+                semi_primes[i*j] += 2
     flags[0] = semi_primes[0]
     for idx, semi in enumerate(semi_primes[1:]):
         if semi==1:
