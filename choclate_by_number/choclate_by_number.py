@@ -3,7 +3,7 @@ def solution(N, M):
     count = 1
     result = [0]
     while True:
-        X = (X+M) % N
+        X = (X + M) % N
         if X == 0:  
             break  
         else:
