@@ -12,7 +12,7 @@ def solution(A, B):
         b = c
         fib_numbers.append(c)
         i = i + 1
-    for i in range(len(B)) :
+    for i in range(len(B)):
        power = 2**B[i]
        remainder = fib_numbers[A[i] + 1] % power 
        result_list.append(remainder)
